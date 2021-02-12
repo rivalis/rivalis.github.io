@@ -14,8 +14,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-          ssh-private-key: |
-              ${{ secrets.SSH_KEY }}
       - env:
           GIT_USER: ${{ secrets.USERNAME }},
           GIT_PASS: ${{ secrets.PASSWORD }},
