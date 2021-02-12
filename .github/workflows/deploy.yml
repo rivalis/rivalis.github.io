@@ -18,5 +18,5 @@ jobs:
           GIT_USER: ${{ secrets.USERNAME }},
           GIT_PASS: ${{ secrets.PASSWORD }},
           DEPLOYMENT_BRANCH: ${{ secrets.DEPLOYMENT_BRANCH }}
-      - run: npm ci
-      - run: npm run deploy
+        run: npm ci
+        run: npm run deploy
