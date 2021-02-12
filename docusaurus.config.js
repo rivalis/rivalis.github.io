@@ -6,28 +6,26 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'rivalis', // Usually your GitHub org/user name.
-  projectName: 'rivalis.github.io', // Usually your repo name.
+  organizationName: 'rivalis',
+  projectName: 'rivalis.github.io',
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false
+    },
     navbar: {
       title: 'Rivalis',
       logo: {
         alt: 'rivalis',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/rivalis',
-          label: 'GitHub',
-          position: 'right',
-        },
+        { to: 'blog', label: 'News', position: 'right' },
+        { to: 'docs/', activeBasePath: 'docs', label: 'Learn', position: 'right' },
+        { to: 'demo', activeBasePath: 'demo', label: 'Examples', position: 'right' },
+        
+        { href: 'https://github.com/rivalis', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
@@ -86,15 +84,13 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/rivalis/rivalis.github.io/edit/master/website/',
+            'https://github.com/rivalis/rivalis.github.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/rivalis/rivalis.github.io/edit/master/website/blog/',
+            'https://github.com/rivalis/rivalis.github.io/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

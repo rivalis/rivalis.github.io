@@ -1,19 +1,16 @@
-/* stylelint-disable docusaurus/copyright-header */
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+* {
+  font-family: 'Share Tech Mono', monospace;
+  color: #fff;
+}
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #e91e63;
+  --ifm-color-primary-dark: #d81557;
+  --ifm-color-primary-darker: #cc1452;
+  --ifm-color-primary-darkest: #a81044;
+  --ifm-color-primary-light: #eb3674;
+  --ifm-color-primary-lighter: #ed427c;
+  --ifm-color-primary-lightest: #f06695;
   --ifm-code-font-size: 95%;
 }
 
@@ -22,4 +19,99 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.wrap-white {
+  background: #fff;
+  padding: 20px 0 0 0;
+}
+
+.wrap-after-white {
+  padding: 0 0 20px 0;
+  background: #263238;
+}
+
+.wrap-white * {
+    color: #263238;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  25% {
+      transform: translateX(-15%) translateZ(0) scaleY(0.8)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  75% {
+      transform: translateX(-40%) translateZ(0) scaleY(0.7)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+
+.hero_decoration {
+  overflow: hidden;
+  pointer-events: none;   
+}
+
+.hero_decoration img {
+  display: block;
+  margin: auto;
+}
+
+.hero_decoration > .wave-animation {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.hero_decoration > .wave-animation .wave-top { z-index: 15; opacity: 0.5; }
+.hero_decoration > .wave-animation .wave-middle { z-index: 10; opacity: 0.75; }
+.hero_decoration > .wave-animation  .wave-bottom { z-index: 5; }
+
+.hero_decoration > .wave-animation .wave-bg {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.hero_decoration > .wave-animation .wave {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.hero_decoration > .wave-animation .wave .wave-bg-top {
+  background-size: 50% 100px;
+  background-image: url('/img/style/wave-top.png');
+  animation: wave-animation 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.hero_decoration > .wave-animation .wave .wave-bg-middle {
+  background-size: 50% 120px;
+  background-image: url('/img/style/wave-middle.png');
+  animation: wave-animation 10s linear infinite;
+}
+
+.hero_decoration > .wave-animation .wave .wave-bg-bottom {
+  background-size: 50% 100px;
+  background-image: url('/img/style/wave-bottom.png');
+  animation: wave-animation 15s linear infinite;
 }

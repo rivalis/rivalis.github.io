@@ -1,37 +1,107 @@
-/* stylelint-disable docusaurus/copyright-header */
-
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.hero {
+    padding: 40px 0;
+    background: #263238;
+    position: relative;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+
+
+.intro {
+    padding: 100px 20px;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button {
+    margin-top: 40px;
+    border-radius: 4px !important;
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+.highlight {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-left: 5px solid var(--ifm-color-primary);
+    margin: 0;
 }
 
-.featureImage {
-  height: 200px;
-  width: 200px;
+.after_highlight {
+    width: max-content;
+    padding: 20px 5px 5px 20px;
+    margin: 0;
+    border-left: 5px solid var(--ifm-color-primary);
+    border-bottom: 5px solid var(--ifm-color-primary);
+}
+
+.block {
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.block:hover {
+    cursor: pointer;
+}
+
+.block > h3 {
+    width: max-content;
+    margin: 5px auto;
+    color: var(--ifm-color-primary);
+}
+
+.block:hover > h3 {
+    text-decoration: underline;
+}
+
+.block > img {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.block > p {
+    padding: 0 5px;
+    text-align: center;
+    margin: 0;
+}
+
+.block:hover {
+    background: rgba(0, 0, 0, .3);
+}
+
+.heading {
+    width: max-content;
+    padding: 10px 5px;
+    border-bottom: 5px solid var(--ifm-color-primary);
+}
+
+.block_client {
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.block_client > img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.block_client > h4 {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .hero img {
+        max-width: 55%;
+        margin: auto;
+        display: block;
+    }
+
+    .intro {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero img {
+        display: none;
+    }
 }
