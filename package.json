@@ -1,5 +1,5 @@
 {
-  "name": "rivalis",
+  "name": "rivalis.github.io",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "export GIT_USER=kalevski && export CURRENT_BRANCH=main && export USE_SSH=true && docusaurus deploy",
+    "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear"
   },
