@@ -23,7 +23,6 @@ module.exports = {
       items: [
         { to: 'blog', label: 'News', position: 'right' },
         { to: 'docs/', activeBasePath: 'docs', label: 'Learn', position: 'right' },
-        { to: 'examples', activeBasePath: 'examples', label: 'Examples', position: 'right' },
         
         { href: 'https://github.com/rivalis', label: 'GitHub', position: 'right' },
       ],
@@ -35,12 +34,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Learn',
-              to: 'docs',
+              label: 'News',
+              to: 'blog',
             },
             {
-              label: 'Examples',
-              to: 'examples',
+              label: 'Learn',
+              to: 'docs',
             }
           ],
         },
@@ -56,10 +55,6 @@ module.exports = {
         {
           title: 'More',
           items: [
-            {
-              label: 'News',
-              to: 'blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/rivalis',

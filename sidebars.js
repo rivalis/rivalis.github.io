@@ -1,6 +1,11 @@
 module.exports = {
-  someSidebar: {
-    'Getting Started': ['getting-started/welcome', 'getting-started/setup'],
+  docs: {
+    'Introduction': [
+      'intro/welcome',
+      'intro/roadmap',
+      'intro/getting-started'
+      
+    ],
     Features: [],
   },
 };
