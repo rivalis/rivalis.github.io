@@ -1,0 +1,17 @@
+.code_snippet * {
+    font-size: 0.75rem;
+}
+
+.code_snippet code * {
+    color: var(--ifm-color-light);
+}
+
+.code_snippet code {
+    color: var(--ifm-color-light);
+    background: none;
+}
+
+.code_snippet button {
+    border: none;
+    cursor: pointer;
+}

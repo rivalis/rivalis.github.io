@@ -1,0 +1,37 @@
+.description_col {
+    order: 1;
+}
+
+.code_snippet {
+    order: 2;
+}
+
+.p_special {
+    padding-left: 20px;
+    border-left: solid 5px var(--ifm-color-primary);
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.h_special {
+    margin: 0;
+    padding: 20px 0 5px 20px;
+    border-left: solid 5px var(--ifm-color-primary);
+    border-bottom: solid 5px var(--ifm-color-primary);
+    width: fit-content;
+}
+
+.feature_block h4 {
+    color: var(--ifm-color-primary)
+}
+
+@media screen and (max-width: 992px) {
+    .description_col {
+        order: 2;
+    }
+
+    .code_snippet {
+        order: 1;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,31 @@
+* {
+  font-family: 'Share Tech Mono', monospace;
+  color: #fff;
+}
+
+:root {
+  --ifm-color-primary: #e91e63;
+  --ifm-color-primary-dark: #d81557;
+  --ifm-color-primary-darker: #cc1452;
+  --ifm-color-primary-darkest: #a81044;
+  --ifm-color-primary-light: #eb3674;
+  --ifm-color-primary-lighter: #ed427c;
+  --ifm-color-primary-lightest: #f06695;
+  --ifm-code-font-size: 95%;
+  --ifm-color-secondary: #009688;
+  --ifm-color-secondary-dark: #00877a;
+  --ifm-color-secondary-darker: #008074;
+  --ifm-color-secondary-darkest: #00695f;
+  --ifm-color-secondary-light: #00a596;
+  --ifm-color-secondary-lighter: #00ad9c;
+  --ifm-color-secondary-lightest: #00c3b1;
+  --ifm-color-dark: #263238;
+  --ifm-color-light: #fff;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}

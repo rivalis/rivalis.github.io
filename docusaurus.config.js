@@ -23,7 +23,7 @@ module.exports = {
       items: [
         { to: 'blog', label: 'News', position: 'right' },
         { to: 'docs/', activeBasePath: 'docs', label: 'Learn', position: 'right' },
-        { to: '/', activeBasePath: 'demo', label: 'Examples', position: 'right' },
+        { to: 'examples', activeBasePath: 'examples', label: 'Examples', position: 'right' },
         
         { href: 'https://github.com/rivalis', label: 'GitHub', position: 'right' },
       ],
@@ -34,31 +34,30 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            
+            {
+              label: 'Learn',
+              to: 'docs',
+            },
+            {
+              label: 'Examples',
+              to: 'examples',
+            }
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+              href: '#',
+            }
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: 'News',
               to: 'blog',
             },
             {
@@ -86,7 +85,7 @@ module.exports = {
             'https://github.com/rivalis/rivalis.github.io/edit/main/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/theme.css'),
         },
       },
     ],
