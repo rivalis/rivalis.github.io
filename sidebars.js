@@ -4,7 +4,7 @@ module.exports = {
       'intro/welcome',
       'intro/getting-started'
     ],
-    'Core API': [
+    'Core': [
       'core-api/index',
       'core-api/hello-world',
       'core-api/rivalis',
@@ -24,7 +24,8 @@ module.exports = {
       'clients/index',
       'clients/websocket-browser'
     ],
-    'Match-maker API': [],
-    'Dashboard': []
+    'Concepts': [
+      'concepts/index'
+    ]
   },
 };
