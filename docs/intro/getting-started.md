@@ -1,7 +1,7 @@
 ---
-id: getting-started
 title: Getting Started
-slug: /intro/getting-started
+hide_title: false
+slug: /getting-started
 ---
 
-[COMING SOON]
+Before 

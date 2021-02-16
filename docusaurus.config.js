@@ -22,7 +22,7 @@ module.exports = {
       },
       items: [
         { to: 'blog', label: 'News', position: 'right' },
-        { to: 'docs/', activeBasePath: 'docs', label: 'Learn', position: 'right' },
+        { to: 'docs', activeBasePath: 'docs', label: 'Learn', position: 'right' },
         
         { href: 'https://github.com/rivalis', label: 'GitHub', position: 'right' },
       ],

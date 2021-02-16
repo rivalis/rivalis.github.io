@@ -1,5 +1,4 @@
 ---
-id: welcome
 title: Welcome
 hide_title: false
 slug: /
