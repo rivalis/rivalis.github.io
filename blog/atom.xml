@@ -2,16 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rivalis.github.io/blog</id>
     <title>Rivalis Blog</title>
-    <updated>2021-02-12T00:00:00.000Z</updated>
+    <updated>2021-02-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rivalis.github.io/blog"/>
     <subtitle>Rivalis Blog</subtitle>
     <icon>https://rivalis.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[DevLog#1]]></title>
+        <title type="html"><![CDATA[Rivalis (pre-alpha)]]></title>
         <id>pre-alpha</id>
         <link href="https://rivalis.github.io/blog/pre-alpha"/>
-        <updated>2021-02-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is a test post.]]></summary>
+        <updated>2021-02-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi,]]></summary>
     </entry>
 </feed>

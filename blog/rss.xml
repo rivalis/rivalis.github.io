@@ -4,15 +4,15 @@
         <title>Rivalis Blog</title>
         <link>https://rivalis.github.io/blog</link>
         <description>Rivalis Blog</description>
-        <lastBuildDate>Fri, 12 Feb 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Feb 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[DevLog#1]]></title>
+            <title><![CDATA[Rivalis (pre-alpha)]]></title>
             <link>https://rivalis.github.io/blog/pre-alpha</link>
             <guid>pre-alpha</guid>
-            <pubDate>Fri, 12 Feb 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is a test post.]]></description>
+            <pubDate>Tue, 16 Feb 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hi,]]></description>
         </item>
     </channel>
 </rss>
