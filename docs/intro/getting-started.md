@@ -1,8 +1,13 @@
 ---
 title: Getting Started
 hide_title: false
-slug: /getting-started
+slug: /
 ---
+
+:::warning
+The documentation is not completed, If you are trying to setup a project using Rivalis and you have any problems, please visit GitHub repository, [open an issue](https://github.com/rivalis/rivalis-core/issues) or [start a discussion](https://github.com/rivalis/rivalis-core/discussions).
+
+:::
 
 Rivalis will give you an environment to develop multiplayer game server for your needs.
 
@@ -18,17 +23,17 @@ Rivalis will give you an environment to develop multiplayer game server for your
 This guide will show you how to setup standard (monolith) client/server multiplayer game server. For more advanced game server infrastructures you can read [Concepts](/docs/concepts) section.
 :::
 
-Create a directory on your system for your server project, then initialize npm project.
+Create a new directory on your system for your rivalis server project, then initialize npm project.
 
 `npm init`
 
-install rivalis core dependency 
+install rivalis core library using command:
 
-`npm install --save @rivalis/core`
+`npm i --save @rivalis/core`
 
 install dependencies for protocols that you want to use. Here we will install rivalis-protocol-websocket (WebSocket Protocol).
 
-`npm install --save @rivalis/protocol-websocket`
+`npm i --save @rivalis/protocol-websocket`
 
 :::note
 If you want to read more about different protocols continue reading [Protocols](/docs/protocols) section.
@@ -41,18 +46,24 @@ const http = require('http')
 const { Rivalis } = require('@rivalis/core')
 const { WebSocketProtocol } = require('@rivalis/protocol-websocket')
 
+// 1. httpServer is used to serve websocket endpoint for the clients
 const httpServer = http.createServer()
 
+// 2. using already created http server for our websocket protocol
 const wsProtocol = new WebSocketProtocol({ server: httpServer })
 
-const gameServer = new Rivalis({
+// 3. creating rivalis instance and configuring rivalis to work with websocket protocol
+const rivalis = new Rivalis({
     protocols: [ wsProtocol ]
 })
 
+// 4. starting web socket server to listen on port 3000
 httpServer.listen(3000, () => {
     console.log('websocket server listen on 3000 port')
-    gameServer.initialize()
 })
+
+// 5. initializing rivalis
+rivalis.initialize()
 
 ```
 You already have up and running rivalis server.
@@ -62,4 +73,3 @@ To connect your game to rivalis, follow [Clients](/docs/clients) section.
 :::
 
 
-Next guide is to understand Rivalis Core API and how to implement game logic.

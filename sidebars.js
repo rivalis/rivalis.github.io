@@ -1,16 +1,9 @@
 module.exports = {
   learn: {
     'Introduction': [
-      'intro/welcome',
-      'intro/getting-started'
-    ],
-    'Core': [
-      'core-api/index',
-      'core-api/hello-world',
-      'core-api/rivalis',
-      'core-api/stages',
-      'core-api/contexts',
-      'core-api/actions'
+      'intro/getting-started',
+      'intro/your-first-stage',
+      'intro/handling-game-actions'
     ],
     'Protocols': [
       'protocols/index',
